@@ -1,14 +1,22 @@
-[![npm version](https://badge.fury.io/js/react-native-iphone-x-helper.svg)](https://badge.fury.io/js/react-native-iphone-x-helper)
+[![npm version](https://badge.fury.io/js/react-native-iphone-screen-helper.svg)](https://badge.fury.io/js/react-native-iphone-screen-helper)
 
-# react-native-iphone-x-helper
+# react-native-iphone-screen-helper
 A library to help you design your react-native app for notched iPhones.
 
+
+I forked this project to continue working on it.
+This project is a fork of https://www.npmjs.com/package/react-native-iphone-x-helper .
+The original repository is not maintained anymore.
+
+The project will be continued in this repository. react-native-iphone-screen-helper is fully compatible.
+If you want to support the project feel free to contact me or create a pull request with your feature.
+
 ## Installing ##
-`yarn add react-native-iphone-x-helper`
+`yarn add react-native-iphone-screen-helper`
 
 or
 
-`npm i react-native-iphone-x-helper --save`
+`npm i react-native-iphone-screen-helper --save`
 
 ## API ##
 
@@ -25,7 +33,7 @@ this method it for creating stylesheets with the iPhone X in mind
 // in style.js
 
 import { StyleSheet } from 'react-native';
-import { ifIphoneX } from 'react-native-iphone-x-helper'
+import { ifIphoneX } from 'react-native-iphone-screen-helper'
 
 export default StyleSheet.create({
     header:{
@@ -51,7 +59,7 @@ export default StyleSheet.create({
 
 #### Example ####
 ```js
-import { isIphoneX } from 'react-native-iphone-x-helper'
+import { isIphoneX } from 'react-native-iphone-screen-helper'
 
 // ...
 
@@ -62,23 +70,18 @@ if (isIphoneX()) {
 }
 ```
 
-### getStatusBarHeight() ###
+### getStatusBarHeight([safe]) ###
 
 #### Parameters ####
-**returns** 
-+ Android: `StatusBar.currentHeight`
-+ iOS:
+**safe** - whether you want for get safe area height or not
 
-
-| StatusBarHeight | Devices | 
-| -- | -- |
-| 20 | Others |
-| 44 | iPhoneX, Xs, Xs Max, 11 Pro, 11 Pro Max |
-| 47 | iPhone12, 12 Pro, 12 Pro Max, 13, 13 Pro, 13 Pro Max, 14, 14 Plus |
-| 48(Not Supported Now) | iPhone11, Xr |
-| 50 | iPhone12 Mini, 13 Mini |
-| 59 | iPhone14 Pro、14 Pro Max |
-
+**returns** - the height of the status bar:
+`50` for safe iPhone 12 Mini and 13 Mini
+`47` for safe others iPhone 12 and 13
+`44` for safe iPhone X
+`30` for unsafe iPhone X
+`20` for other iOS devices
+`StatusBar.currentHeight` for Android.
 
 #### Example ####
 
@@ -86,7 +89,7 @@ if (isIphoneX()) {
 // in style.js
 
 import { StyleSheet } from 'react-native';
-import { getStatusBarHeight } from 'react-native-iphone-x-helper'
+import { getStatusBarHeight } from 'react-native-iphone-screen-helper'
 
 export default StyleSheet.create({
     header:{
@@ -114,7 +117,7 @@ export default StyleSheet.create({
 // in style.js
 
 import { StyleSheet } from 'react-native';
-import { getBottomSpace } from 'react-native-iphone-x-helper'
+import { getBottomSpace } from 'react-native-iphone-screen-helper'
 
 export default StyleSheet.create({
     totalview: {
@@ -123,23 +126,6 @@ export default StyleSheet.create({
         marginBottom: getBottomSpace()
     },
 });
-```
-
-### isDynamicIsland ###
-
-**returns** the device whether contains the dynamic island. Specifically, 14 Pro 和 14 Pro Max by now
-
-#### Example ####
-```js
-import { isDynamicIsland } from 'react-native-iphone-x-helper'
-
-// ...
-
-if (isDynamicIsland()) {
-    // do this...
-} else {
-    // do that...
-}
 ```
 
 ## Licence ##
