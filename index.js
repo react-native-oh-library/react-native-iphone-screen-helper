@@ -7,13 +7,13 @@ export function isIphoneX() {
         Platform.OS === "ios" &&
         !Platform.isPad &&
         !Platform.isTVOS &&
-        (checkDemension(780) ||
-            checkDemension(812) ||
-            checkDemension(844) ||
-            checkDemension(896) ||
-            checkDemension(926) ||
-            checkDemension(852) ||
-            checkDemension(932))
+        (checkDimension(780) ||
+            checkDimension(812) ||
+            checkDimension(844) ||
+            checkDimension(896) ||
+            checkDimension(926) ||
+            checkDimension(852) ||
+            checkDimension(932))
     )
 }
 
@@ -21,7 +21,7 @@ export function isDynamicIsland() {
     return Platform.OS === "ios" && !Platform.isPad && !Platform.isTVOS && _isStatusBarHeight59()
 }
 
-const checkDemension = (size) => {
+const checkDimension = (size) => {
     // window is not correct sometimes when screen is correct
     const window = Dimensions.get("window")
     const windowRes = window.width == size || window.height == size
