@@ -87,20 +87,6 @@ const _getIphoneStatusBarHeight = () => {
     return 20
 }
 
-const checkDimensions = (portraitWidth, portraitHeight) => {
-    const dimen = Dimensions.get('window');
-
-    return (dimen.height === portraitHeight && dimen.width === portraitWidth)
-        || (dimen.width === portraitHeight && dimen.height === portraitWidth)
-}
-
-// 5.4: 12 Mini, 13 Mini
-const isIphoneScreen54 = () => checkDimensions(375, 812)
-// 6.1: 12, 12 Pro, 13, 13 Pro
-const isIphoneScreen61 = () => checkDimensions(390, 844)
-// 6.7: 12 Pro Max, 13 Pro Max
-const isIphoneScreen67 = () => checkDimensions(428, 926)
-
 export function ifIphoneX(iphoneXStyle, regularStyle) {
     if (isIphoneX()) {
         return iphoneXStyle
