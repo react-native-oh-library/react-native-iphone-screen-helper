@@ -11,6 +11,8 @@ The original repository is not maintained anymore.
 The project will be continued in this repository. react-native-iphone-screen-helper is fully compatible.
 If you want to support the project feel free to contact me or create a pull request with your feature.
 
+기존 개발자가 업데이트를 해주지않아 PR을 fork 해서 업데이트를 진행하였고, npm 에도 배포하였습니다.
+
 ## Installing ##
 `yarn add react-native-iphone-screen-helper`
 
@@ -76,11 +78,11 @@ if (isIphoneX()) {
 **safe** - whether you want for get safe area height or not
 
 **returns** - the height of the status bar:
+`59` for safe iPhone 14 Pro, 14 Pro Max
 `50` for safe iPhone 12 Mini and 13 Mini
-`47` for safe others iPhone 12 and 13
+`47` for safe iPhone 12, 13, 14 and 12 Pro, 13 Pro and 12 Pro Max, 13 Pro Max and 14 Plus
 `44` for safe iPhone X
-`30` for unsafe iPhone X
-`20` for other iOS devices
+`20` for other devices
 `StatusBar.currentHeight` for Android.
 
 #### Example ####
