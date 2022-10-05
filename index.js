@@ -60,7 +60,7 @@ const _isStatusBarHeight48 = () => {
 
 // 12 Mini, 13 Mini
 const _isStatusBarHeight50 = () => {
-    return checkDimensions(360, 780)
+    return checkDimensions(375, 812)
 }
 // 14 Pro, 14 Pro Max
 const _isStatusBarHeight59 = () => {
