@@ -6,7 +6,7 @@ export function isIphoneX() {
     return (
         Platform.OS === "ios" &&
         !Platform.isPad &&
-        !Platform.isTVOS &&
+        !Platform.isTV &&
         (checkDimension(780) ||
             checkDimension(812) ||
             checkDimension(844) ||
@@ -18,7 +18,7 @@ export function isIphoneX() {
 }
 
 export function isDynamicIsland() {
-    return Platform.OS === "ios" && !Platform.isPad && !Platform.isTVOS && _isStatusBarHeight59()
+    return Platform.OS === "ios" && !Platform.isPad && !Platform.isTV && _isStatusBarHeight59()
 }
 
 const checkDimension = (size) => {
