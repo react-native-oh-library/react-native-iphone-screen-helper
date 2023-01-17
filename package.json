@@ -1,6 +1,6 @@
 {
   "name": "react-native-iphone-screen-helper",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "A library to help you design your react-native app for the iPhone",
   "main": "index.js",
   "types": "index.d.ts",
@@ -23,7 +23,8 @@
   "author": "Chaehyeon Lee <chlee1001@naver.com>",
   "contributors": [
     "ptelad <https://github.com/ptelad>",
-    "Norch <https://github.com/Norcy>"
+    "Norch <https://github.com/Norcy>",
+    "teivienn <https://github.com/teivienn>"
   ],
   "license": "MIT",
   "bugs": {
