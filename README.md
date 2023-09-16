@@ -1,7 +1,7 @@
 [![npm version](https://badge.fury.io/js/react-native-iphone-screen-helper.svg)](https://badge.fury.io/js/react-native-iphone-screen-helper)
 
 # react-native-iphone-screen-helper
-A library to help you design your react-native app for notched iPhones.
+A library to help you design your react-native app for notched and dynamic island iPhones.
 
 
 I forked this project to continue working on it.
@@ -11,7 +11,6 @@ The original repository is not maintained anymore.
 The project will be continued in this repository. react-native-iphone-screen-helper is fully compatible.
 If you want to support the project feel free to contact me or create a pull request with your feature.
 
-기존 개발자가 업데이트를 해주지않아 PR을 fork 해서 업데이트를 진행하였고, npm 에도 배포하였습니다.
 
 ## Installing ##
 `yarn add react-native-iphone-screen-helper`
@@ -23,10 +22,10 @@ or
 ## API ##
 
 ### ifIphoneX(iphoneXStyle, \[regularStyle\]) ###
-this method it for creating stylesheets with the iPhone X in mind
+This method is for creating stylesheets with the iPhone X and later models, including those with dynamic islands, in mind.
 
 #### Parameters ####
-**iphoneXStyle** - the style to apply if you're on iPhone X
+**iphoneXStyle** - the style to apply if you're on iPhone X or newer models with a notch or dynamic island.
 
 **regularStyle (*optional*)** - the style to apply if you're not on iPhone X
 
@@ -57,7 +56,7 @@ export default StyleSheet.create({
 
 ### isIphoneX() ###
 
-**returns** - `true` if you running on an iPhone X.
+**returns** - `true` if you're running on an iPhone X or a newer model with a notch or dynamic island. 
 
 #### Example ####
 ```js
@@ -72,18 +71,16 @@ if (isIphoneX()) {
 }
 ```
 
-### getStatusBarHeight([safe]) ###
-
-#### Parameters ####
-**safe** - whether you want for get safe area height or not
+### getStatusBarHeight() ###
 
 **returns** - the height of the status bar:
-`59` for safe iPhone 14 Pro, 14 Pro Max
-`50` for safe iPhone 12 Mini and 13 Mini
-`47` for safe iPhone 12, 13, 14 and 12 Pro, 13 Pro and 12 Pro Max, 13 Pro Max and 14 Plus
-`44` for safe iPhone X
-`20` for other devices
-`StatusBar.currentHeight` for Android.
+- `59` for safe iPhone 14 Pro, 14 Pro Max, 15, 15 Plus, 15 Pro, 15 Pro Max
+- `50` for safe iPhone 12 Mini, 13 Mini
+- `47` for safe iPhone 12, 12 Pro, 12 Pro Max, 13, 13 Pro, 13 Pro Max, 14, 14 Plus
+- `44` for safe iPhone X, Xs, Xs Max, 11 Pro, 11 Pro Max
+- `48` for safe iPhone Xr, 11
+- `20` for other devices
+- `StatusBar.currentHeight` for Android.
 
 #### Example ####
 
@@ -107,11 +104,9 @@ export default StyleSheet.create({
 });
 ```
 
-***NOTE:*** If your using the the unsafe statusbar height, make sure to add 14dp of padding to your content, otherwise it's going to be flush against the notch
-
 ### getBottomSpace ###
 
-**returns** - the height of the bottom to fit the safe area: `34` for iPhone X and `0` for other devices.
+**returns** - the height of the bottom to fit the safe area: `34` for iPhone X and newer models with a notch or dynamic island, and `0` for other devices.
 
 #### Example ####
 
