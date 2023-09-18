@@ -1,6 +1,6 @@
 {
   "name": "react-native-iphone-screen-helper",
-  "version": "2.1.0",
+  "version": "2.0.3",
   "description": "A library to help you design your react-native app for the iPhone",
   "main": "index.js",
   "types": "index.d.ts",
@@ -17,8 +17,6 @@
     "iphone-x",
     "iphoneX",
     "iphone-notch",
-    "iphone-dynamic",
-    "iphone-dynamic-island",
     "iphone",
     "stylesheet"
   ],
@@ -34,7 +32,6 @@
   },
   "homepage": "https://github.com/chlee1001/react-native-iphone-screen-helper#readme",
   "peerDependencies": {
-    "react-native": ">=0.42.0",
-    "react-native-device-info": ">=0.10.0"
+    "react-native": ">=0.42.0"
   }
 }
