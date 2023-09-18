@@ -125,5 +125,36 @@ export default StyleSheet.create({
 });
 ```
 
+
+## Applied iPhone series
+| DeviceID   | DeviceName           | ScreenResolution       |   StatusbarHeight |
+|:-----------|:---------------------|:-----------------------|------------------:|
+| iPhone10,3 | iPhone X Global      | 375 x 812 (3x ~458ppi) |                44 |
+| iPhone10,6 | iPhone X GSM         | 375 x 812 (3x ~458ppi) |                44 |
+| iPhone11,2 | iPhone Xs            | 375 x 812 (3x ~458ppi) |                44 |
+| iPhone11,4 | iPhone Xs Max        | 414 x 896 (3x ~458ppi) |                44 |
+| iPhone11,6 | iPhone Xs Max Global | 414 x 896 (3x ~458ppi) |                44 |
+| iPhone11,8 | iPhone Xr            | 414 x 896 (2x ~326ppi) |                48 |
+| iPhone12,1 | iPhone 11            | 414 x 896 (2x ~326ppi) |                48 |
+| iPhone12,3 | iPhone 11 Pro        | 375 x 812 (3x ~458ppi) |                44 |
+| iPhone12,5 | iPhone 11 Pro Max    | 414 x 896 (3x ~458ppi) |                44 |
+| iPhone13,1 | iPhone 12 mini       | 360 x 780 (3x ~476ppi) |                50 |
+| iPhone13,2 | iPhone 12            | 390 x 844 (3x ~460ppi) |                47 |
+| iPhone13,3 | iPhone 12 Pro        | 390 x 844 (3x ~460ppi) |                47 |
+| iPhone13,4 | iPhone 12 Pro Max    | 428 x 926 (3x ~458ppi) |                47 |
+| iPhone14,4 | iPhone 13 mini       | 375 x 812 (3x ~476ppi) |                50 |
+| iPhone14,5 | iPhone 13            | 390 x 844 (3x ~460ppi) |                47 |
+| iPhone14,2 | iPhone 13 Pro        | 390 x 844 (3x ~460ppi) |                47 |
+| iPhone14,3 | iPhone 13 Pro Max    | 428 x 926 (3x ~458ppi) |                47 |
+| iPhone14,7 | iPhone 14            | 390 x 844 (3x ~460ppi) |                47 |
+| iPhone14,8 | iPhone 14 Plus       | 428 x 926 (3x ~458ppi) |                47 |
+| iPhone15,2 | iPhone 14 Pro        | 393 x 852 (3x ~460ppi) |                59 |
+| iPhone15,3 | iPhone 14 Pro Max    | 430 x 932 (3x ~458ppi) |                59 |
+| iPhone15,4 | iPhone 15            | 393 x 852 (3x ~460ppi) |                59 |
+| iPhone15,5 | iPhone 15 Plus       | 393 x 852 (3x ~461ppi) |                59 |
+| iPhone16,1 | iPhone 15 Pro        | 393 x 852 (3x ~460ppi) |                59 |
+| iPhone16,2 | iPhone 15 Pro Max    | 430 x 932 (3x ~460ppi) |                59 |
+
+
 ## Licence ##
 **MIT**
