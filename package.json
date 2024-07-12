@@ -1,6 +1,6 @@
 {
-  "name": "react-native-iphone-screen-helper",
-  "version": "2.1.1",
+  "name": "@react-native-oh-tpl/react-native-iphone-screen-helper",
+  "version": "2.1.1-0.0.1",
   "description": "A library to help you design your react-native app for the iPhone",
   "main": "index.js",
   "types": "index.d.ts",
@@ -33,5 +33,8 @@
   "homepage": "https://github.com/chlee1001/react-native-iphone-screen-helper#readme",
   "peerDependencies": {
     "react-native": ">=0.42.0"
+  },
+  "harmony": {
+    "alias": "react-native-iphone-screen-helper"
   }
 }
